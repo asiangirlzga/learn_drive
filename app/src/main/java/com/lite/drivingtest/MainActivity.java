@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 
     @Override protected void onCreate(Bundle b) {
         super.onCreate(b);
+        PadClient.attach(this);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         FrameLayout root = new FrameLayout(this);
         gv = new GameView(this);
